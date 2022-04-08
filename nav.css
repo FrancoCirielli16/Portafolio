@@ -1,0 +1,103 @@
+
+
+
+/*inicio del css de la barra nav*/
+
+.nav__in{
+	display: flex;
+	position: fixed;
+	width: 250px;
+	height: 100vh;
+    -webkit-box-pack: justify;
+    justify-content: space-around;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #001834;
+    border-right: 2.5px solid #ffff;
+}
+
+.nav__in__avatar {
+	background-color: #001834;
+	width: 100%;
+    text-align: center;
+    padding: 20px 0px; 
+}
+
+.nav__in__img{
+	height: 200px;
+	width: 200px;
+	border: 2px solid rgba(256, 256, 256, 128);
+	border-radius: 50%;
+}
+
+
+.nav__in__section {
+	background-color: #001834;
+	width: 100%;
+	margin-top: 2px;
+}
+
+#item1 {
+	border-top: 1.5px solid rgba(256, 256, 256, 128);
+
+}
+
+
+.nav__in__items {
+	display: block;
+	border-bottom: 1.5px solid rgba(256, 256, 256, 128);
+	text-align: center;
+}
+
+
+.nav__in__items a{
+	display: block;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	letter-spacing: 2px;
+	color:#ffff;
+}
+
+
+.nav__in__footer {
+	width: 100%;
+	color:#ffff;
+	padding: 1.3rem 0px;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+}
+
+
+
+/*boton responsed*/
+
+
+.button-nav__respon{
+	position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.3);
+    color: #ffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+
+.button-nav__respon svg{
+	width: 1.5rem;
+}
