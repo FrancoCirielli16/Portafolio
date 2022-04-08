@@ -11,8 +11,10 @@
 
 /*colores para la web*/
 
+
 body {
 	background-color: #55859e;
+	font-family: 'JetBrains Mono', monospace;
 }
 
 span{
@@ -46,7 +48,7 @@ span{
     top: 50%;
     width: 132%;
     right: 14%;
-    font-family: 'Cutive Mono', monospace;
+	font-family: 'JetBrains Mono', monospace;
 	color: #ffffff;
 	margin: 0rem 1.5rem;
 }
@@ -58,7 +60,7 @@ span{
 	color:black;
 	margin-left:2.3rem ;
 	font-size: 1rem;
-	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'JetBrains Mono', monospace;
 	letter-spacing: 1.5px;
 	opacity: 0;
 	transform: translateY(3rem);
