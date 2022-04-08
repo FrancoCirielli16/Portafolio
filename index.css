@@ -1,14 +1,12 @@
 /*valores predeterminados*/
 
-*{
-	margin: 0px;
-    padding: 0px;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    text-decoration: none;
-    font-size: 1.1rem;
-
+    margin: 0;
+    padding: 0;
 }
-
 
 
 /*colores para la web*/
