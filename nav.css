@@ -1,5 +1,5 @@
 
-
+*{text-decoration: none;}
 
 /*inicio del css de la barra nav*/
 
@@ -17,14 +17,14 @@
     border-right: 2.5px solid #ffff;
 }
 
-.nav__in__avatar {
+.avatar {
 	background-color: #001834;
 	width: 100%;
     text-align: center;
     padding: 20px 0px; 
 }
 
-.nav__in__img{
+.img{
 	height: 200px;
 	width: 200px;
 	border: 2px solid rgba(256, 256, 256, 128);
@@ -32,26 +32,25 @@
 }
 
 
-.nav__in__section {
+.section {
 	background-color: #001834;
+    border-top: 1.5px solid rgba(256, 256, 256, 128);
 	width: 100%;
 	margin-top: 2px;
 }
 
-#item1 {
-	border-top: 1.5px solid rgba(256, 256, 256, 128);
 
-}
-
-
-.nav__in__items {
+.items {
 	display: block;
 	border-bottom: 1.5px solid rgba(256, 256, 256, 128);
 	text-align: center;
+    background-color: #001834;
+	width: 100%;
+	margin-top: 2px;
 }
 
 
-.nav__in__items a{
+.items a{
 	display: block;
 	font-family: 'Nanum Gothic', sans-serif;
 	font-size: 1rem;
@@ -62,11 +61,11 @@
 }
 
 
-.nav__in__footer {
+.footer {
 	width: 100%;
 	color:#ffff;
 	padding: 1.3rem 0px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     display: block;
     text-align: center;
 }
