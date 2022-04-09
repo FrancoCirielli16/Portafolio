@@ -8,20 +8,12 @@
 }
 
 
-*{
-	margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-size: 1.1rem;
-
-}
 
 
 /*colores para la web*/
-
 body {
-	background-color: #13182e;
+	background-color: #55859e;
+	font-family: 'JetBrains Mono', monospace;
 }
 
 span{
@@ -30,5 +22,5 @@ span{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 	font-size: 3rem;
-	color: #767676;
+	color: #28251b;
 }
