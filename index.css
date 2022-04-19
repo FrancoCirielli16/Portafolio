@@ -3,120 +3,103 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /*variables*/
 
-:root{
-	--color-body:#55859e;
-	--span-color: #28251b;
-	--parrafo-color: #28251b;
-	--titulo-color: #ffffff;
-	--iconos-color: #ffffff;
-	--iconos-colorhover:#d8d5d5;
-
+:root {
+  --color-body: #55859e;
+  --span-color: #28251b;
+  --parrafo-color: #28251b;
+  --titulo-color: #ffffff;
+  --iconos-color: #ffffff;
+  --iconos-colorhover: #d8d5d5;
 }
-
-
-
 
 /*colores para la web*/
 
-
 body {
-	background-color: var(--color-body);
-	font-family: 'JetBrains Mono', monospace;
+  background-color: var(--color-body);
+  font-family: "JetBrains Mono", monospace;
 }
 
-span{
-	margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-	font-size: 2.5rem;
-	color: var(--span-color);
+span {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 2.5rem;
+  color: var(--span-color);
 }
-
 
 /*Parte del about me*/
 
 /*centra todo*/
 
 .header__intro {
-	position: absolute;
-	top: 47%;
-	left: 57%;
-	width: 40%;
-	height: 10%;
-	text-align: center;
-	transform: translate(-50%, -50%);
+  display: grid;
+  height: 100vh;
+  place-content: center;
 }
 
-
-
-
-.header__intro__titulo{
-    font-size: 2.5rem;
-    max-width: 720px;
-	font-family: 'JetBrains Mono', monospace;
-	color:var(--titulo-color);
+.header__intro__titulo {
+  font-size: 2.5rem;
+  max-width: 720px;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--titulo-color);
 }
 
-.header__intro__parrafo{
-	display: block;
-	padding: 10px 0px;
-	color:var(--parrafo-color);
-	margin-right: 17%;
-	margin-left: 10%;
-	margin-top: 1%;
-	font-size: 1rem;
-	font-family: 'JetBrains Mono', monospace;
-	letter-spacing: 1.5px;
+.header__intro__parrafo {
+  padding: 10px 0px;
+  color: var(--parrafo-color);
+  justify-self: center;
+  font-size: 1rem;
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 1.5px;
 }
 
-.header__intro__icons{
-	display: flex;
-	margin-left: 10%;
-	margin-right: 17%;
-	margin-top: 1%;
-    justify-content: center;
+.header__intro__icons {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 12%;
+  margin-top: 1%;
+  justify-content: center;
 }
 
 .header__intro__icons__instagram {
-	height: 30px;
- 	width: 30px;
-    display: inline-block;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
 }
 
-
-.header__intro__icons__Git-hub{
-	width: 30px;
-    height: 30px;
-    display: inline-block;
+.header__intro__icons__Git-hub {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
 }
 
-.header__intro__icons__Linkedin{
-	width: 30px;
-    height: 30px;
-    display: inline-block;
+.header__intro__icons__Linkedin {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
 }
 
 .header__intro__icons a {
-	color: var(--iconos-color);
-    display: flex;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    border-radius: 50%;
-    cursor: pointer;
-    margin-top: 1px;
-    margin-right: 20px;
-    margin-left: 20px;
+  color: var(--iconos-color);
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 1px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .header__intro__icons a :hover {
-		color:var(--iconos-colorhover)   
+  color: var(--iconos-colorhover);
 }
