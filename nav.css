@@ -1,5 +1,30 @@
 
-*{text-decoration: none;}
+/*valores predeterminados*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*variables*/
+
+:root{
+	--color-body:#55859e;
+	--nav-background: #001834;
+	--nav-bordes: #ffffff;
+    --nav-items:#ffffff;
+    --items-hover: #01244d;
+    --footer-color: #ffffff;
+    --butom-colordegrid:rgba(0,0,0,0.3);
+    --butom-solidcolor: #ffffff;
+    --butom-hover:rgba(36, 36, 36, 0.771);
+
+}
+
 
 /*inicio del css de la barra nav*/
 
@@ -13,12 +38,12 @@
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
-    background-color: #001834;
-    border-right: 2.5px solid #ffff;
+    background-color: var(--nav-background);
+    border-right: 2.5px solid var(--nav-bordes);
 }
 
 .avatar {
-	background-color: #001834;
+	background-color: var(--nav-background);
 	width: 100%;
     text-align: center;
     padding: 20px 0px; 
@@ -33,22 +58,23 @@
 
 
 .section {
-	background-color: #001834;
+	background-color:#ffffff;
     border-top: 1.5px solid rgba(256, 256, 256, 128);
 	width: 100%;
-	margin-top: 2px;
+
 }
 
 
 .items {
-	display: block;
+    display:flex;
 	border-bottom: 1.5px solid rgba(256, 256, 256, 128);
-	text-align: center;
-    background-color: #001834;
-	width: 100%;
-	margin-top: 2px;
+    background-color: var(--nav-background);
+    justify-content: center;  
 }
 
+.items:hover {
+    background-color: var(--items-hover);
+}
 
 .items a{
 	display: block;
@@ -57,13 +83,13 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 	letter-spacing: 2px;
-	color:#ffff;
+	color:var(--nav-items);
 }
 
 
 .footer {
 	width: 100%;
-	color:#ffff;
+	color:var(--footer-color);
 	padding: 1.3rem 0px;
     font-size: 0.9rem;
     display: block;
@@ -82,8 +108,8 @@
     width: 2.5rem;
     height: 2.5rem;
     z-index: 100;
-    background-color: rgba(0,0,0,0.3);
-    color: #ffff;
+    background-color: var(--butom-colordegrid);
+    color: var(--butom-solidcolor);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -96,6 +122,10 @@
     border-radius: 3px;
 }
 
+.button-nav__respon:hover{
+    background-color: var(--butom-hover);
+    color: var(--butom-solidcolor);
+}
 
 .button-nav__respon svg{
 	width: 1.5rem;

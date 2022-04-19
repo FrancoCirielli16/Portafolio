@@ -8,12 +8,26 @@
     padding: 0;
 }
 
+/*variables*/
+
+:root{
+	--color-body:#55859e;
+	--span-color: #28251b;
+	--parrafo-color: #28251b;
+	--titulo-color: #ffffff;
+	--iconos-color: #ffffff;
+	--iconos-colorhover:#d8d5d5;
+
+}
+
+
+
 
 /*colores para la web*/
 
 
 body {
-	background-color: #55859e;
+	background-color: var(--color-body);
 	font-family: 'JetBrains Mono', monospace;
 }
 
@@ -23,8 +37,9 @@ span{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 	font-size: 2.5rem;
-	color: #28251b;
+	color: var(--span-color);
 }
+
 
 /*Parte del about me*/
 
@@ -45,17 +60,15 @@ span{
 
 .header__intro__titulo{
     font-size: 2.5rem;
-    text-align: center;
     max-width: 720px;
 	font-family: 'JetBrains Mono', monospace;
-	color: #ffffff;
+	color:var(--titulo-color);
 }
-
 
 .header__intro__parrafo{
 	display: block;
 	padding: 10px 0px;
-	color:black;
+	color:var(--parrafo-color);
 	margin-right: 17%;
 	margin-left: 10%;
 	margin-top: 1%;
@@ -92,7 +105,7 @@ span{
 }
 
 .header__intro__icons a {
-	color: 	#ffffff;
+	color: var(--iconos-color);
     display: flex;
     align-items: center;
     -webkit-box-pack: center;
@@ -104,4 +117,6 @@ span{
     margin-left: 20px;
 }
 
-
+.header__intro__icons a :hover {
+		color:var(--iconos-colorhover)   
+}
