@@ -32,22 +32,29 @@ span{
 	height: 90%;
 }
 
+
+
 .barra1{
-    background-color: #316278;
-    border-radius: 30px;
+    content: "";
     position: absolute;
-	left: 0.5%;
-	width: 30%;
-	height: 1.5%;
+    top: 4.5rem;
+    width: 13rem;
+    height: 0.5rem;
+    background-color: #316278;
+    border-radius: 15px;
+    left: 8px;
+
 }
 
 .barra2{
-    background-color: #62d8f3;
-    border-radius: 30px;
+    content: "";
     position: absolute;
-	left: 0.5%;
-	width: 15%;
-	height: 1.5%;
+    top: 4.5rem;
+    width: 5rem;
+    height: 0.5rem;
+    background-color: #62d8f3;
+    border-radius: 15px;
+    left: 8px;
 }
 
 .header_About h2 {
